@@ -1,0 +1,69 @@
+@keyframes moon-fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moon-fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .moon-fade-in {
+    animation: moon-fade-in 2s ease-in-out;
+  }
+  
+  .moon-fade-out {
+    animation: moon-fade-out 2s ease-in-out;
+  }
+  
+  .moon-container {
+    position: relative;
+  }
+  
+  #moon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index: -1;
+    width:450px;
+    height:450px
+  }
+
+  .sun-container {
+    position: relative;
+  }
+  
+  #sun {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index: -1;
+    width:450px;
+    height:450px
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
